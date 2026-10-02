@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>system_monitor_gui</name>
+  <version>0.0.0</version>
+  <description>用 Qt 小窗口实时显示系统状态的 ROS2 包</description>
+  <maintainer email="you@example.com">you</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- 运行期依赖：需要 rclpy、自定义消息包，以及 Qt 的 Python 绑定 -->
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>system_monitor</exec_depend>
+  <exec_depend>python3-pyqt5</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
